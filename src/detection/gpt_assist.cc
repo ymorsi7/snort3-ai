@@ -31,7 +31,7 @@
 using namespace snort;
 
 // OpenAI API configuration
-static const std::string OPENAI_API_KEY = "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";
+static const std::string OPENAI_API_KEY = "your_openai_api_key_here";
 static const std::string OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
 static const std::string OPENAI_MODEL = "gpt-4o-mini";
 

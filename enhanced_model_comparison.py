@@ -12,7 +12,7 @@ import re
 from typing import Dict, List, Any
 
 # OpenAI API configuration
-API_KEY = "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"
+API_KEY = "your_openai_api_key_here"
 API_URL = "https://api.openai.com/v1/chat/completions"
 
 # Available models to test

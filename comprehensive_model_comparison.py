@@ -12,9 +12,9 @@ import re
 from typing import Dict, List, Any
 
 # API Keys
-OPENAI_API_KEY = "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"
-CLAUDE_API_KEY = "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"
-GEMINI_API_KEY = "AIzaSyBe6r7-qu-8hH4XOe0GkEe4B3ll39c_t_4"
+OPENAI_API_KEY = "your_openai_api_key_here"
+CLAUDE_API_KEY = "your_claude_api_key_here"
+GEMINI_API_KEY = "your_gemini_api_key_here"
 
 # API URLs
 OPENAI_URL = "https://api.openai.com/v1/chat/completions"

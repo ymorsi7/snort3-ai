@@ -31,6 +31,16 @@ AIzaSy*
 *_secret*
 *_token*
 
+# Files that commonly contain API keys
+best_model_test.py
+compare_openai_models.py
+comprehensive_model_comparison.py
+enhanced_model_comparison.py
+cost_analysis.py
+realistic_cost_analysis.py
+test_openai_integration.py
+src/detection/gpt_assist.cc
+
 # OpenAI API Keys
 OPENAI_API_KEY
 ANTHROPIC_API_KEY
@@ -295,3 +305,6 @@ snort_ai/
 ai_snort/
 hybrid_snort/
 enhanced_snort/
+
+# Security and verification scripts
+security_check.sh
