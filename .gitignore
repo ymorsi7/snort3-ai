@@ -1,64 +1,297 @@
-*.gcda
-*.gcno
-*.gcov
-*.log
-*.out
-*.rej
-*.swp
-*.trs
-*~
-._Xcode*
-.cache/
-.vscode/
-Cbuild/
-Xcode*/
-compile_commands.json
-doc/basic.txt
-doc/builtin.txt
-doc/codec.txt
-doc/commands.txt
-doc/config.txt
-doc/config_changes.txt
-doc/connector.txt
-doc/counts.txt
-doc/data.txt
-doc/docbook-xsl.css
-doc/gids.txt
-doc/help.txt
-doc/images.tgz
-doc/inspector.txt
-doc/ips_action.txt
-doc/ips_option.txt
-doc/logger.txt
-doc/modules.txt
-doc/options.txt
-doc/plugins.txt
-doc/search_engine.txt
-doc/signals.txt
-doc/snort2lua_cmds.txt
-doc/snort_manual.chunked.tgz
-doc/snort_manual.chunked/
-doc/snort_manual.tgz
-doc/snort_manual.xml
-doc/version.txt
-extra/rule.xxd
-extra/snort_examples-1.0.tar.gz
-snort.pc
-src/framework/api_options.h
-GPATH
-GRTAGS
-GTAGS
-HTML
+# 🚨 SECURITY WARNING: API Keys and Sensitive Information
+# Never commit API keys, passwords, or sensitive data to version control!
 
-# These are related to the build-scripts
-alt/
-install/
-build.env
-coverage.info
-coverage.txt
-src/uncovered.txt
+# API Keys and Sensitive Information
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*api_key*
+*secret*
+*token*
+*password*
+*credential*
+.env
+.env.local
+.env.production
+.env.staging
+config.json
+secrets.json
+credentials.json
+
+# Specific API Key Patterns (COMMON MISTAKES)
+sk-proj-*
+sk-ant-api03-*
+sk-ant-*
+AIzaSy*
+*_api_key*
+*_secret*
+*_token*
+
+# OpenAI API Keys
+OPENAI_API_KEY
+ANTHROPIC_API_KEY
+GOOGLE_API_KEY
+GEMINI_API_KEY
+CLAUDE_API_KEY
+
+# SNORT Configuration with Keys
+snort.conf
+snort3.conf
+*.conf
+*.rules
+
+# Large Dataset Files
+*.pcap
+*.cap
+*.pcapng
+*.parquet
+*.csv
+*.json
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# CICIDS2017 Dataset
+cicids2017/
+pcap-data/
+real_pcaps/
+academic_datasets/
+datasets/
+
+# Generated PCAP Files
+*_pcaps/
+paper_ready_pcaps/
+truly_academic_pcaps/
+final_academic_pcaps/
+real_academic_pcaps/
+
+# Results and Output Files
+results/
+working_results/
+academic_results/
+truly_academic_results/
+paper_ready_results/
+evaluation_results/
+snort_results/
+
+# Python Cache and Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# vscode config
-snort3.code-workspace
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+academic_env/
+snort_env/
+python_env/
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Logs
+*.log
+logs/
+snort.log
+snort.log.*
+alert.log
+alert.log.*
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+#*#
+
+# Compiled Files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# SNORT Specific
+snort.lock
+snort.pid
+snort.sock
+snort.sock.*
+
+# Large Binary Files
+*.bin
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Test Files
+test_*.pcap
+test_*.cap
+sample_*.pcap
+sample_*.cap
+
+# Generated Reports
+*.pdf
+*.docx
+*.pptx
+report_*
+evaluation_*
+analysis_*
+
+# Model Files
+*.model
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+
+# Data Science
+*.ipynb
+notebooks/
+data/
+raw_data/
+processed_data/
+
+# Machine Learning
+models/
+checkpoints/
+tensorboard_logs/
+wandb/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitattributes
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# R (if any)
+.Rhistory
+.RData
+.Ruserdata
+
+# Scala
+*.class
+*.log
+*.ctxt
+.project
+.classpath
+.cache
+.settings/
+.scala_dependencies
+.worksheet
+
+# Large Files (>100MB)
+*.large
+*.huge
+*.massive
+
+# Specific to this project
+snort3-ai/
+snort_ai/
+ai_snort/
+hybrid_snort/
+enhanced_snort/

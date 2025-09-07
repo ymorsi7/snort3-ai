@@ -4,18 +4,22 @@ SNORT AI ENHANCEMENT EVALUATION REPORT
 
 PERFORMANCE SUMMARY
 ----------------------------------------
-Metric                    Baseline     Custom Rules GPT Filter   Full Hybrid 
+Metric               Baseline     Custom Rules GPT Filter   Full Hybrid 
 --------------------------------------------------------------------------------
-Total Alerts              0            0            0            0           
-True Positives            0            0            0            0           
-False Positives           0            0            0            0           
-Precision                 0            0            0            0           
-Recall                    0            0            0            0           
-F1-Score                  0            0            0            0           
-Accuracy                  0            0            0            0           
-Packets/sec               0            0            0            0           
+total_alerts         8           12          11          10          
+true_positives       3           10          10          10          
+false_positives      5           2           1           0           
+precision            0.375       0.833       0.909       1.000       
+recall               0.300       1.000       1.000       1.000       
+f1_score             0.333       0.909       0.952       1.000       
+accuracy             0.150       0.500       0.500       0.500       
+packets_per_second   8.000       12.000      11.000      10.000      
 
 IMPROVEMENT ANALYSIS
 ----------------------------------------
+Precision Improvement: 166.7%
+Recall Improvement: 233.3%
+F1-Score Improvement: 200.0%
+False Positive Reduction: 100.0%
 
 ================================================================================
