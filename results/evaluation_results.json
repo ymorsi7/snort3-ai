@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "error": "[Errno 2] No such file or directory: 'snort'",
+    "run_type": "baseline"
+  },
+  "hybrid_custom_rules": {
+    "error": "[Errno 2] No such file or directory: 'snort'",
+    "run_type": "hybrid_custom_rules"
+  },
+  "hybrid_gpt_filtering": {
+    "error": "[Errno 2] No such file or directory: 'snort'",
+    "run_type": "hybrid_gpt_filtering"
+  },
+  "hybrid_full": {
+    "error": "[Errno 2] No such file or directory: 'snort'",
+    "run_type": "hybrid_full"
+  }
+}

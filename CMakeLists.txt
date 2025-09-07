@@ -33,6 +33,16 @@ include (${CMAKE_MODULE_PATH}/configure_options.cmake)
 #include (${CMAKE_MODULE_PATH}/compiler_features.cmake)
 include (${CMAKE_MODULE_PATH}/sanity_checks.cmake)
 
+# Find AI enhancement dependencies
+find_package(PkgConfig REQUIRED)
+find_package(CURL REQUIRED)
+find_package(jsoncpp REQUIRED)
+
+# Set CURL variables if not found by find_package
+if(NOT CURL_FOUND)
+    pkg_check_modules(CURL REQUIRED libcurl)
+endif()
+
 set (INSTALL_SUFFIX "${CMAKE_PROJECT_NAME}")
 set (INCLUDE_INSTALL_PATH "${CMAKE_INSTALL_INCLUDEDIR}/${INSTALL_SUFFIX}")
 set (LIB_INSTALL_PATH "${CMAKE_INSTALL_LIBDIR}/${INSTALL_SUFFIX}")

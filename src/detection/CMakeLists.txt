@@ -8,6 +8,9 @@ set (DETECTION_INCLUDES
     ips_context_data.h
     pattern_match_data.h
     rule_option_types.h
+    local_rule_loader.h
+    gpt_assist.h
+    metrics_logger.h
 )
 
 add_library (detection OBJECT
@@ -56,6 +59,20 @@ add_library (detection OBJECT
     treenodes.h
     tag.cc
     tag.h
+    local_rule_loader.cc
+    gpt_assist.cc
+    metrics_logger.cc
+)
+
+# Link required libraries for AI enhancements
+target_link_libraries(detection 
+    ${CURL_LIBRARIES}
+    jsoncpp
+)
+
+# Include directories for AI enhancements
+target_include_directories(detection PRIVATE
+    ${CURL_INCLUDE_DIRS}
 )
 
 install(FILES ${DETECTION_INCLUDES}
